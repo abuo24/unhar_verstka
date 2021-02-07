@@ -1,0 +1,302 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Yu Gothic UI", FontAwesome;
+  margin-bottom: 0;
+}
+
+html {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: 0.3s ease all;
+}
+
+a:hover {
+  color: lightsalmon;
+}
+
+#inputwithicon::-webkit-input-placeholder {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+#inputwithicon::-moz-placeholder {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+#inputwithicon:-ms-input-placeholder {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+.container {
+  max-width: 1350px;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px 20px 0 20px;
+}
+
+.header {
+  display: flex;
+  top: 0;
+  left: 150px;
+}
+
+.header-logo {
+  padding: 5px 30px;
+  width: 30%;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 40px;
+}
+
+.header-links {
+  width: 70%;
+  display: flex;
+  margin-top: 20px;
+  text-align: center;
+}
+.header-links a {
+  margin-left: 100px;
+}
+.header-links a:last-child {
+  background: orange;
+  border: 2px solid transparent;
+  color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+}
+.header-links a:last-child:hover {
+  border: 2px solid orange;
+  background-color: transparent;
+  color: black;
+}
+.header-links a + a {
+  margin-left: 15px;
+}
+
+.title-art {
+  opacity: 10%;
+  width: 100%;
+  height: 60px;
+}
+.title-art img {
+  width: 40px;
+  margin-left: 40px;
+  transform: rotate(90deg);
+}
+.title-head {
+  display: flex;
+  margin-top: 60px;
+}
+.title-head-text {
+  width: 30%;
+  margin-left: 200px;
+  font-weight: bold;
+}
+.title-head-text .money {
+  width: 80%;
+  font-size: 45px;
+}
+.title-head-text .money span {
+  color: orange;
+}
+.title-head-text p {
+  font-weight: normal;
+}
+.title-head-text .send {
+  position: relative;
+}
+.title-head-text .send input {
+  border-radius: 40px;
+  border: 0px;
+  box-shadow: 0 0 2px 1px grey;
+  height: 30px !important;
+  font-size: 16px;
+  width: 270px;
+  padding: 1px 0px 1px 10px;
+}
+.title-head-text .send button {
+  background-color: orange;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 40px;
+  border: 0;
+  height: 33px;
+  border: 2px solid orange;
+  position: absolute;
+  right: 60px;
+  top: -2px;
+  box-shadow: 0 0 2px 0px darkgrey;
+  transition: 0.3s ease all;
+}
+.title-head-text .send button:hover {
+  background-color: white;
+  color: black;
+}
+.title-head-img {
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.work {
+  margin-top: 40px;
+}
+.work h2 {
+  text-align: center;
+}
+.work .linear {
+  background-color: orange;
+  width: 40px;
+  height: 3px;
+  margin: 0 auto;
+  border-radius: 20%;
+}
+.work-item {
+  margin-top: 30px;
+  width: 50%;
+}
+.work-item-items {
+  width: 100%;
+  display: flex;
+}
+.work-item-items i {
+  color: orange;
+}
+.work-item-items-img {
+  width: 15%;
+  padding: 20px 10px 20px 40px;
+}
+.work-item-items-title {
+  width: 85%;
+}
+
+.fordisplay {
+  display: flex;
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+}
+.footer .connect {
+  display: flex;
+}
+.footer .connect-logo {
+  width: 33%;
+}
+.footer .connect-logo img {
+  width: 150px;
+  color: white;
+}
+.footer .connect-app {
+  width: 33%;
+  padding: 40px;
+  display: flex;
+}
+.footer .connect-app a {
+  padding: 0 10px;
+}
+.footer .connect-app a img {
+  width: 150px;
+}
+.footer .connect-messanger {
+  width: 33%;
+  padding: 50px;
+}
+.footer .connect-messanger a {
+  padding: 10px 5px;
+  transition: 0.3s ease all;
+}
+.footer .connect-messanger i {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transition: 0.3s ease all;
+}
+.footer .connect-messanger a:hover i {
+  color: orange;
+}
+.footer .connect-me {
+  display: flex;
+  text-align: center;
+}
+.footer .connect-me-subscribe {
+  width: 40%;
+  text-align: right;
+}
+.footer .connect-me-input {
+  padding: 18px;
+  position: relative;
+}
+.footer .connect-me-input input {
+  padding: 7px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 0;
+  width: 250px;
+}
+.footer .connect-me-input button {
+  position: absolute;
+  right: 5px;
+  width: 35px;
+  height: 33px;
+  border: 0;
+  border-radius: 8px;
+  background-color: orange;
+}
+.footer .connect-me-input button i {
+  color: white;
+}
+.footer hr {
+  width: 80%;
+  color: #eeeeee;
+  height: 1px;
+  border-color: #c2c2c2;
+  border-width: 0.5px;
+}
+.footer .licence a {
+  color: white;
+  font-weight: 100;
+  padding: 0;
+  text-decoration: underline;
+}
+.footer .licence a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

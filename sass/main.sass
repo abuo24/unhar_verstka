@@ -1,0 +1,258 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css"
+
+*
+  box-sizing: border-box
+body
+  background-color: white
+  color: black
+  font-family: "Yu Gothic UI", FontAwesome
+  margin-bottom: 0
+html
+  background-color: black
+a
+  text-decoration: none
+  color: black
+  padding: 10px 20px
+  font-weight: bold
+  transition: .3s ease all
+a:hover
+  color: lightsalmon
+
+
+#inputwithicon::-webkit-input-placeholder
+  font-family: FontAwesome
+  font-weight: normal
+  overflow: visible
+  vertical-align: top
+  display: inline-block !important
+  padding-left: 5px
+  padding-top: 2px
+
+#inputwithicon::-moz-placeholder
+  font-family: FontAwesome
+  font-weight: normal
+  overflow: visible
+  vertical-align: top
+  display: inline-block !important
+  padding-left: 5px
+  padding-top: 2px
+
+#inputwithicon:-ms-input-placeholder
+  font-family: FontAwesome
+  font-weight: normal
+  overflow: visible
+  vertical-align: top
+  padding-left: 5px
+  padding-top: 2px
+
+.container
+  max-width: 1350px
+  height: auto
+  margin: 0 auto
+  padding: 5px 20px 0 20px
+.header
+  //background-color: orchid
+  display: flex
+  //position: fixed
+  top: 0
+  left: 150px
+.header-logo
+    padding: 5px 30px
+    width: 30%
+    //background-color: antiquewhite
+.logo
+    width: 100px
+    margin-left: 40px
+.header-links
+  width: 70%
+  display: flex
+  margin-top: 20px
+  text-align: center
+
+  a
+    margin-left: 100px
+  a:last-child
+    background: orange
+    border: 2px solid transparent
+    color: white
+    width: 100px
+    height: 50px
+    border-radius: 30px
+  a:last-child:hover
+    border: 2px solid orange
+    background-color: transparent
+    color: black
+  a+a
+    margin-left: 15px
+
+.title
+  //background-color: aqua
+  &-art
+    opacity: 10%
+    width: 100%
+    height: 60px
+    //height: 30px
+    img
+      width: 40px
+      margin-left: 40px
+      transform: rotate(90deg)
+  &-head
+    display: flex
+    //background-color: beige
+    margin-top: 60px
+    &-text
+      width: 30%
+      margin-left: 200px
+      font-weight: bold
+
+      .money
+        width: 80%
+        span
+          color: orange
+        font-size: 45px
+      p
+        font-weight: normal
+      .send
+        position: relative
+        input
+          border-radius: 40px
+          border: 0px
+          box-shadow: 0 0 2px 1px grey
+          height: 30px !important
+          font-size: 16px
+          width: 270px
+          padding: 1px 0px 1px 10px
+        button
+          background-color: orange
+          color: white
+          padding: 4px 10px
+          border-radius: 40px
+          border: 0
+          height: 33px
+          border: 2px solid orange
+          position: absolute
+          right: 60px
+          top: -2px
+          box-shadow: 0 0 2px 0px darkgrey
+          transition: .3s ease all
+        button:hover
+          background-color: white
+          color: black
+    &-img
+      //background-color: #ff253a
+      display: inline-block
+      margin-left: 150px
+      margin-top: 20px
+.work
+  //background-color: #ff253a
+  margin-top: 40px
+  h2
+    text-align: center
+  .linear
+    background-color: orange
+    width: 40px
+    height: 3px
+    margin: 0 auto
+    border-radius: 20%
+  &-item
+    margin-top: 30px
+    //background-color: beige
+    width: 50%
+
+    &-items
+      //background-color: orchid
+      width: 100%
+      display: flex
+      i
+        color: orange
+      &-img
+        width: 15%
+        padding: 20px 10px 20px 40px
+      &-title
+        width: 85%
+
+
+.fordisplay
+  display: flex
+.footer
+  background-color: black
+  text-align: center
+  color: white
+  margin-top: 70px
+
+  .connect
+    //background-color: orange
+    display: flex
+    &-logo
+      width: 33%
+      //padding: 20px
+      img
+        width: 150px
+        color: white
+    &-app
+      width: 33%
+      padding: 40px
+      display: flex
+      a
+        padding: 0 10px
+        img
+          width: 150px
+    &-messanger
+      width: 33%
+      padding: 50px
+      a
+        padding: 10px 5px
+        transition: .3s ease   all
+      i
+        padding: 5px
+        border-radius: 50%
+        background-color: rgba(0, 0, 0, .8)
+        color: white
+        transition: .3s ease all
+      a:hover
+        i
+          color: orange
+    &-me
+      display: flex
+      text-align: center
+      &-subscribe
+        width: 40%
+        text-align: right
+      &-input
+        padding: 18px
+        //background-color: #ff253a
+        position: relative
+        input
+          padding: 7px 10px
+          font-size: 16px
+          border-radius: 4px
+          border: 0
+          width: 250px
+        button
+          position: absolute
+          right: 5px
+          width: 35px
+          height: 33px
+          border: 0
+          border-radius: 8px
+          //background-color: aqua
+          background-color: orange
+          i
+            color: white
+
+  hr
+    width: 80%
+    color: #eeeeee
+    height: 1px
+    border-color: #c2c2c2
+    border-width: .5px
+  .licence
+    a
+      color: white
+      font-weight: 100
+      padding: 0
+      text-decoration: underline
+    a:hover
+      color: orange
+      text-decoration: none
+
